@@ -306,7 +306,7 @@ script = ExtResource("1_ofpvf")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1895295126]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_81gkq")
-animation = &"death"
+animation = &"run"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1385615948]
