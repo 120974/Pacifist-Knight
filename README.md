@@ -1,70 +1,68 @@
 <a id="readme-top"></a>
 
-<!-- HEADER -->
+<!-- PROJECT HEADER -->
 <br />
 <div align="center">
-    <h3 align="center"> Pacfist Knight </h3>
-    <p align="center">
-        A Pacfist Knight who won't hurt a soul even at his own expense
-        <br />
-        In a world of souls willing to hurt him
-        <br />
-    </p>
+  <h1 align="center">Pacifist Knight</h1>
+
+  <p align="center">
+    A pacifist knight who won’t hurt a soul—even at his own expense.<br />
+    In a world full of souls willing to hurt him.
+  </p>
 </div>
 
-<!-- CONTENTS -->
-<details>
-    <summary>Table of Contents</summary>
-    <ol>
-        <li>
-            <a href="#about">About The Project</a>
-            <ul>
-                <li><a href="#built-with">Built Using</a></li>
-            </ul>
-        </li>
-    </ol>
-</details>
+---
 
+## Table of Contents
+- [About the Project](#about-the-project)
+- [How to Run](#how-to-run)
+- [How to Play](#how-to-play)
+- [Built Using](#built-using)
 
-<!-- ABOUT -->
-## About The Project
-<br />
-This was my very first platformer ever made. It's a labor of love all around.
-<br />
-How to Run:
-* Download the code by downloading the github repo
-* Navigate to PacfistKnightBuild
-* Run to PacfistKnight
+---
 
-<br />
-How to play:
-* WASD to Move around
-* Spacebar to jump (Can double jump)
-* Shift to roll
-* You have no health bar (You can die from anything)
+## About the Project
+This is my **very first platformer** ever made and truly a **labor of love**.  
+The goal was to explore movement, level design, and challenge—without combat.
 
-<p align="right">(<a href="#readme-top">top</a>)</p>
+You play as a knight who **cannot fight back**. Every mistake is fatal.
 
-### Built Using
-Godot! <br />
-This project was built using assets as a baseline whilst adding my own assest into the mix.<br />
-* [![GDScript][Godot]][Godot-url]
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- URLS -->
-[contributors-shield]: https://img.shields.io/github/contributors/budziot/Godot_Super-Wakatime?style=for-the-badge
-[contributors-url]: https://github.com/BudzioT/Godot_Super-Wakatime/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/budziot/Godot_Super-Wakatime?style=for-the-badge
-[forks-url]: https://github.com/BudzioT/Godot_Super-Wakatime/forks
-[stars-shield]: https://img.shields.io/github/stars/budziot/Godot_Super-Wakatime?style=for-the-badge
-[stars-url]: https://github.com/BudzioT/Godot_Super-Wakatime/stargazers
-[issues-shield]: https://img.shields.io/github/issues/budziot/Godot_Super-Wakatime?style=for-the-badge
-[issues-url]: https://github.com/BudzioT/Godot_Super-Wakatime/issues
-[license-shield]: https://img.shields.io/github/license/budziot/Godot_Super-Wakatime?style=for-the-badge
-[license-url]: https://github.com/BudzioT/Godot_Super-Wakatime/blob/master/addons/godot_super-wakatime/LICENSE
-[product-screenshot]: https://cloud-j4wibbzz7-hack-club-bot.vercel.app/0image.png
-[product-logo]: https://cloud-j4wibbzz7-hack-club-bot.vercel.app/2godotwaka2.png
+---
+
+## How to Run
+1. Download or clone this GitHub repository
+2. Navigate to the `PacifistKnightBuild` folder
+3. Run **PacifistKnight**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## How to Play
+- **W / A / S / D** — Move
+- **Spacebar** — Jump (double jump enabled)
+- **Shift** — Roll
+- No health bar — *you can die from anything*
+
+Precision and timing are everything.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## Built Using
+- **Godot Engine**
+- GDScript
+- A mix of premade assets and original custom assets
+
+[![Godot][Godot]][Godot-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+<!-- BADGES / LINKS -->
 [Godot]: https://img.shields.io/badge/Godot%20Engine-478CBF?logo=godotengine&logoColor=fff&style=flat
 [Godot-url]: https://godotengine.org/
-[Ouch-shield]: https://img.shields.io/badge/Ouch!-tool-blue?label=Ouch!
-[Ouch-url]: https://github.com/ouch-org/ouch
-[time-screenshot]: https://cloud-l88kldf50-hack-club-bot.vercel.app/0image.png
