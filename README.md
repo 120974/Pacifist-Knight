@@ -37,6 +37,12 @@
 
 This was my very first platformer ever made. It's a labor of love all around.
 <br />
+How to Run:
+* Download the code by downloading the github repo
+* Navigate to PacfistKnightBuild
+* Run to PacfistKnight
+
+<br />
 How to play:
 * WASD to Move around
 * Spacebar to jump (Can double jump)
