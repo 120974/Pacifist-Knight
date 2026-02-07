@@ -3,9 +3,6 @@
 <!-- HEADER -->
 <br />
 <div align="center">
-    <a href="https://github.com/BudzioT/Godot_Super-Wakatime">
-        <img src="https://cloud-bo1ln2br1-hack-club-bot.vercel.app/0godotwaka22.png"  alt="Pacfist Knight"/>
-    </a>
     <h3 align="center"> Pacfist Knight </h3>
     <p align="center">
         A Pacfist Knight who won't hurt a soul even at his own expense
@@ -32,9 +29,6 @@
 <!-- ABOUT -->
 ## About The Project
 <br />
-
-[![Product Screenshot][product-screenshot]](https://waka.hackclub.com)
-
 This was my very first platformer ever made. It's a labor of love all around.
 <br />
 How to Run:
