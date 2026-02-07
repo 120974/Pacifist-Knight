@@ -55,10 +55,6 @@ region = Rect2(96, 0, 32, 32)
 atlas = ExtResource("1_p3dy5")
 region = Rect2(64, 160, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_y4r1p"]
-atlas = ExtResource("1_p3dy5")
-region = Rect2(0, 160, 32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_d2wvv"]
 atlas = ExtResource("1_p3dy5")
 region = Rect2(32, 160, 32, 32)
@@ -213,32 +209,29 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_y4r1p")
-}, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_d2wvv")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_3v2ag")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_jej6c")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_f1ej7")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_oprun")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_a8ls1")
 }, {
-"duration": 1.0,
+"duration": 2.6,
 "texture": SubResource("AtlasTexture_qfm1y")
 }],
-"loop": true,
-"name": &"roll",
+"loop": false,
+"name": &"jumpc",
 "speed": 10.0
 }, {
 "frames": [{
@@ -306,8 +299,7 @@ script = ExtResource("1_ofpvf")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1895295126]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_81gkq")
-animation = &"run"
-autoplay = "idle"
+animation = &"jump"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1385615948]
 position = Vector2(0, -5)
