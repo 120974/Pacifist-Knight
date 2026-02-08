@@ -32,7 +32,7 @@ You play as a knight who **cannot fight back**. Every mistake is fatal.
 ---
 
 ## How to Run
-1. Download from here [![Drive]][Drive-url]
+1. Download from here <a href="https://drive.google.com/drive/folders/16e60eLydrq3Id43-qz5FSFamCVc-4N2j?usp=sharing" target="_blank">Drive</a>
 2. Navigate to the `PacifistKnightBuild` folder
 3. Download the entire `PacifistKnightBuild` folder
 4. Unzip the zipfile
