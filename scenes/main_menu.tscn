@@ -10,13 +10,13 @@
 [ext_resource type="Texture2D" uid="uid://cqc6b61puiu4t" path="res://assets/sprites/fourSeasonsPlatformer_ [tileset, version 2.0]/objects_/items_.png" id="6_rcqid"]
 [ext_resource type="Texture2D" uid="uid://c8abbpt1bmiql" path="res://assets/sprites/fourSeasonsPlatformer_ [tileset, version 2.0]/background_/sky_.png" id="7_1ajci"]
 [ext_resource type="Texture2D" uid="uid://cwdqvssxvucf6" path="res://assets/sprites/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/blackout_.png" id="8_7b55j"]
-[ext_resource type="Shader" uid="uid://bu52ev1lruml3" path="res://scenes/game.gdshader" id="9_lgwnu"]
+[ext_resource type="Shader" uid="uid://cwr8iagq5mkc0" path="res://scenes/game.gdshader" id="9_lgwnu"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bqqt6"]
 texture = ExtResource("1_ekxnf")
 modulate_color = Color(0.449156, 0.450517, 0.434607, 1)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5pajh"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rcqid"]
 texture = ExtResource("3_5dd4i")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -178,7 +178,7 @@ texture = ExtResource("3_5dd4i")
 2:4/size_in_atlas = Vector2i(3, 3)
 2:4/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j7ex8"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ajci"]
 texture = ExtResource("4_lgwnu")
 0:0/0 = 0
 1:0/0 = 0
@@ -341,7 +341,7 @@ texture = ExtResource("4_lgwnu")
 6:19/0 = 0
 7:19/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a8gd2"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7b55j"]
 texture = ExtResource("5_flqon")
 3:0/0 = 0
 4:0/0 = 0
@@ -486,7 +486,7 @@ texture = ExtResource("5_flqon")
 15:8/0 = 0
 16:8/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hstxw"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5pajh"]
 texture = ExtResource("6_rcqid")
 0:0/0 = 0
 1:0/0 = 0
@@ -501,7 +501,7 @@ texture = ExtResource("6_rcqid")
 2:2/0 = 0
 3:2/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8egab"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j7ex8"]
 texture = ExtResource("7_1ajci")
 0:0/0 = 0
 1:0/0 = 0
@@ -532,7 +532,7 @@ texture = ExtResource("7_1ajci")
 2:6/0 = 0
 3:6/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gw5y6"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a8gd2"]
 texture = ExtResource("8_7b55j")
 0:0/0 = 0
 1:0/0 = 0
@@ -552,12 +552,12 @@ texture = ExtResource("8_7b55j")
 
 [sub_resource type="TileSet" id="TileSet_svtp6"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_5pajh")
-sources/3 = SubResource("TileSetAtlasSource_8egab")
-sources/12 = SubResource("TileSetAtlasSource_a8gd2")
-sources/13 = SubResource("TileSetAtlasSource_hstxw")
-sources/1 = SubResource("TileSetAtlasSource_j7ex8")
-sources/6 = SubResource("TileSetAtlasSource_gw5y6")
+sources/0 = SubResource("TileSetAtlasSource_rcqid")
+sources/3 = SubResource("TileSetAtlasSource_j7ex8")
+sources/12 = SubResource("TileSetAtlasSource_7b55j")
+sources/13 = SubResource("TileSetAtlasSource_5pajh")
+sources/1 = SubResource("TileSetAtlasSource_1ajci")
+sources/6 = SubResource("TileSetAtlasSource_a8gd2")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_flqon"]
 shader = ExtResource("9_lgwnu")
