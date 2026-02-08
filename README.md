@@ -34,7 +34,9 @@ You play as a knight who **cannot fight back**. Every mistake is fatal.
 ## How to Run
 1. Download or clone this GitHub repository
 2. Navigate to the `PacifistKnightBuild` folder
-3. Run **PacifistKnight**
+3. Download the entire `PacifistKnightBuild` folder
+4. Unzip the zipfile
+5. Run **PacifistKnight**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
