@@ -11,28 +11,22 @@ const ACCEL = 900.0
 const FRICTION = 900.0
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
 var jumps_left = MAX_JUMPS
 var is_rolling = false
-var roll_direction = 1
 var is_invulnerable = false
-var current_animation := ""
 var can_roll = true
+
+var facing := 1
+var current_animation := ""
 
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var roll_cooldown_bar = $"CanvasLayer/RollCoolDownBar"
 
 func _ready():
-	roll_cooldown_bar.value = 100  # start full
+	roll_cooldown_bar.value = 100
 
 func _physics_process(delta):
-	# ROLL PHYSICS
-	if is_rolling:
-		velocity.x = roll_direction * ROLL_SPEED
-		if not is_on_floor():
-			velocity.y += gravity * delta
-		move_and_slide()
-		return
-
 	# GRAVITY
 	if not is_on_floor():
 		velocity.y += gravity * delta
@@ -46,26 +40,35 @@ func _physics_process(delta):
 
 	var direction = Input.get_axis("move_left", "move_right")
 
-	# SPRITE FLIP
-	animated_sprite.flip_h = direction < 0
+	# FACING (NO JITTER)
+	if direction != 0:
+		facing = direction
+		animated_sprite.flip_h = facing < 0
 
-	# START ROLL WITH COOLDOWN
+	# START ROLL
 	if Input.is_action_just_pressed("roll") and can_roll:
 		start_roll()
-		return
 
-	# HORIZONTAL MOVEMENT
-	if direction != 0:
-		velocity.x = move_toward(velocity.x, direction * SPEED, ACCEL * delta)
+	# ROLL PHYSICS
+	if is_rolling:
+		velocity.x = facing * ROLL_SPEED
 	else:
-		velocity.x = move_toward(velocity.x, 0, FRICTION * delta)
+		# HORIZONTAL MOVEMENT
+		if direction != 0:
+			velocity.x = move_toward(velocity.x, direction * SPEED, ACCEL * delta)
+		else:
+			velocity.x = move_toward(velocity.x, 0, FRICTION * delta)
 
-	# ANIMATION
+	# ANIMATION (STATE-DRIVEN)
 	var new_animation := current_animation
-	if is_on_floor():
-		new_animation = "idle" if direction == 0 else "run"
+	if is_rolling:
+		new_animation = "roll"
+	elif not is_on_floor():
+		new_animation = "jump"
+	elif direction == 0:
+		new_animation = "idle"
 	else:
-		new_animation = "jumpc"
+		new_animation = "run"
 
 	if new_animation != current_animation:
 		current_animation = new_animation
@@ -77,23 +80,25 @@ func start_roll():
 	is_rolling = true
 	is_invulnerable = true
 	can_roll = false
-	roll_direction = -1 if animated_sprite.flip_h else 1
 	roll_cooldown_bar.value = 0
+
 	await get_tree().create_timer(ROLL_TIME).timeout
+
 	is_rolling = false
 	is_invulnerable = false
-	roll_cooldown_bar_fill()
+	fill_roll_cooldown()
 
-func roll_cooldown_bar_fill():
-	var timer = 0.0
-	while timer < ROLL_COOLDOWN:
-		timer += get_process_delta_time()
-		roll_cooldown_bar.value = (timer / ROLL_COOLDOWN) * 100
+func fill_roll_cooldown():
+	var t := 0.0
+	while t < ROLL_COOLDOWN:
+		t += get_process_delta_time()
+		roll_cooldown_bar.value = (t / ROLL_COOLDOWN) * 100
 		await get_tree().process_frame
+
 	can_roll = true
 	roll_cooldown_bar.value = 100
 
 func die():
 	animated_sprite.play("death")
-	set_process(false)
 	set_physics_process(false)
+	set_process(false)
