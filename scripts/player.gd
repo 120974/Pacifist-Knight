@@ -86,9 +86,7 @@ func start_roll():
 	is_rolling = false
 	is_invulnerable = false
 
-func kill():
-	if is_invulnerable:
-		return
-
-	print("Player died")
-	# get_tree().reload_current_scene()
+func die():
+	$AnimatedSprite2D.play("death")
+	set_process(false)
+	set_physics_process(false)
