@@ -1,4 +1,4 @@
-extends CollisionShape2D
+extends TextureProgressBar
 
 
 # Called when the node enters the scene tree for the first time.
