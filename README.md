@@ -32,7 +32,7 @@ You play as a knight who **cannot fight back**. Every mistake is fatal.
 ---
 
 ## How to Run
-1. Download or clone this GitHub repository
+1. Download from here [![Drive]][Drive-url]
 2. Navigate to the `PacifistKnightBuild` folder
 3. Download the entire `PacifistKnightBuild` folder
 4. Unzip the zipfile
@@ -66,5 +66,7 @@ Precision and timing are everything.
 ---
 
 <!-- BADGES / LINKS -->
+[Drive-url]: https://drive.google.com/drive/folders/16e60eLydrq3Id43-qz5FSFamCVc-4N2j?usp=sharing
+
 [Godot]: https://img.shields.io/badge/Godot%20Engine-478CBF?logo=godotengine&logoColor=fff&style=flat
 [Godot-url]: https://godotengine.org/
