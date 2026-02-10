@@ -102,3 +102,4 @@ func die():
 	animated_sprite.play("death")
 	set_physics_process(false)
 	set_process(false)
+	
